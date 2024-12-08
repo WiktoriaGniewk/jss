@@ -1,0 +1,53 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_gniewkowska()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+    <form>
+    <textarea name="gniewkowska" cols="80" rows="20" readonly>
+        <!DOCTYPE html>
+        <html lang="pl">
+        
+        <head>
+            <title>Zadanie 16 Gniewkowska</title>
+            <meta charset="utf-8">
+            <style>
+                .result {
+                    color: navy;
+                    font-size: 28px;
+                    width: 100%;
+                    display: block;
+                }
+            </style>
+        </head>
+        
+        <body>
+            <script language="JavaScript">
+                var a = parseInt(prompt("Podaj pierwszą liczbę A=", ""));
+                var b = parseInt(prompt("Podaj drugą liczbę B=", ""));
+        
+                var wynik = (a+b)*(a+b)*(a+b);
+                var pierwszy = a*a*a;
+                var drugi = 3 *(a*a) * b;
+                var trzeci = 3 * a * (b*b);
+                var czwarty = b*b*b;
+                var suma = pierwszy + drugi + trzeci + czwarty;
+        
+                document.write("<div class='result'>wczytane liczby: A=" + a + " B=" + b + "</div>");
+                document.write("<div class='result'>(" + a + " + " + b + ")^3 = " + a + "^3 + 3*(" + a + ")^2*(" + b + ") + 3*(" + a + ")*(" + b + ")^2 + " + b + "^3 = " + pierwszy + " + " + drugi + " + " + trzeci + " + " + czwarty + " = " + suma + "</div>");
+            </script>
+        </body>
+        
+        </html>
+    </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_gniewkowska()"/>
+    <script type="text/javascript">
+    </script>
+    </body>
+    </html>

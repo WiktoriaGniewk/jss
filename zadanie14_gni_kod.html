@@ -1,0 +1,41 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_gniewkowska()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+    <form>
+    <textarea name="gniewkowska" cols="80" rows="20" readonly>
+        <!DOCTYPE html>
+        <html lang="pl">
+        
+        <head>
+            <title>Zadanie 14 Gniewkowska</title>
+            <meta charset="utf-8">
+        </head>
+        
+        <body>
+            <div id="result" style="color:rgb(0, 255, 85);font-size:30px;">
+                <script language="JavaScript">
+                    var gni = prompt("Podaj ułamek egipski:", "");
+                    var m = parseInt(gni)
+                    var wynik1 = m + 2;
+                    var wynik2 = (m+1)*(m+2)
+                    var wynik3 = m*(m+1)
+                    document.getElementById("result").innerHTML = "1/" + m + " = 1/" + wynik1 + " + 1/" + wynik2 + " + 1/" + wynik3;
+                </script>
+            </div>
+        </body>
+        
+        </html>
+    </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_gniewkowska()"/>
+    <script type="text/javascript">
+    </script>
+    </body>
+    </html>

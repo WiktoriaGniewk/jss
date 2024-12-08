@@ -1,0 +1,41 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_gniewkowska()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+    <form>
+    <textarea name="gniewkowska" cols="80" rows="20" readonly>
+        <!DOCTYPE html>
+        <html lang="pl">
+        
+        <head>
+            <title>Zadanie 11 Gniewkowska</title>
+        </head>
+        
+        <body>
+            <div id="result" style="color:rgb(0, 255, 85);font-size:56px;">
+                <script language="JavaScript">
+                    var D1_gni = prompt("Pierwsza data:", "");
+                    var D2_gni = prompt("Druga data:", "");
+                    var D1 = parseFloat(D1_gni);
+                    var D2 = parseFloat(D2_gni);
+                    var sekundy = (D1 - D2) * 86400;
+                    document.getElementById("result").innerHTML = "Ilość sekund: " + sekundy + " sekund";
+        
+                </script>
+            </div>
+        </body>
+        
+        </html>
+    </textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_gniewkowska()"/>
+    <script type="text/javascript">
+    </script>
+    </body>
+    </html>
